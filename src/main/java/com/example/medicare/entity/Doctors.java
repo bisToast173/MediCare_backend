@@ -26,7 +26,7 @@ public class Doctors {
     private String licenseNumber;
 
     @Column(name = "experience_years", nullable = false)
-    private int experienceYears;
+    private short experienceYears;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "department_id", nullable = false)
